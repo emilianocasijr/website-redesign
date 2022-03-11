@@ -20,10 +20,12 @@ export default {};
 
 <style lang="scss" scoped>
 .navbar-container {
-  position: fixed;
+  position: sticky;
   display: flex;
   width: 100%;
   height: 4.375rem;
+  top: 0;
+  border-bottom: 1px solid #e15100;
 
   .navbar {
     display: flex;
@@ -36,7 +38,7 @@ export default {};
       font-family: mulish;
       font-weight: 600;
       font-size: 22px;
-      color: rgb(192, 0, 32);
+      color: #e15100;
     }
 
     ul {
