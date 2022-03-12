@@ -1,16 +1,19 @@
 <template>
   <div class="home" v-if="dataFetched">
     <HeroSection :homeData="heroSectionData" class="heroSection" />
+    <AsideMostPopular class="aside" />
   </div>
 </template>
 
 <script>
 import axios from "axios";
 import HeroSection from "../components/HeroSection.vue";
+import AsideMostPopular from "../components/AsideMostPopular.vue";
 
 export default {
   components: {
     HeroSection,
+    AsideMostPopular,
   },
 
   data() {
@@ -43,7 +46,18 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-// .heroSection {
-//   width: 100%;
-// }
+.home {
+  display: flex;
+  margin: 0 auto;
+  width: 72%;
+  justify-content: space-between;
+
+  .heroSection {
+    max-width: 920px;
+  }
+
+  .aside {
+    max-width: 300px;
+  }
+}
 </style>

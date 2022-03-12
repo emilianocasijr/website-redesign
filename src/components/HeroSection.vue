@@ -104,19 +104,19 @@ h1 {
     position: absolute;
 
     &.right {
-      right: 15%;
+      right: 0;
       top: 40%;
     }
 
     &.left {
-      left: 15%;
+      left: 0;
       top: 40%;
     }
   }
 }
 
 .hero-description {
-  width: 50%;
+  width: 95%;
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
