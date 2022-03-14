@@ -14,24 +14,6 @@
           class="hero-image"
         />
       </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        class="svg-triangle left"
-        width="100"
-        height="100"
-      >
-        <path d="M 5,50 97.5,5 97.5,95 Z" />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        class="svg-triangle right"
-        width="100"
-        height="100"
-      >
-        <path d="M 95,50 5,95 5,5 z" />
-      </svg>
     </div>
     <div class="hero-description">
       {{ getHeroDescription }}
@@ -96,21 +78,6 @@ h1 {
       display: block;
       margin: 0 auto;
       max-height: 450px;
-    }
-  }
-  .svg-triangle {
-    filter: invert(86%) sepia(0%) saturate(1265%) hue-rotate(176deg)
-      brightness(92%) contrast(93%);
-    position: absolute;
-
-    &.right {
-      right: 0;
-      top: 40%;
-    }
-
-    &.left {
-      left: 0;
-      top: 40%;
     }
   }
 }

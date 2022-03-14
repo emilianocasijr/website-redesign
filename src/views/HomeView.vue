@@ -8,7 +8,7 @@
 <script>
 import axios from "axios";
 import HeroSection from "../components/HeroSection.vue";
-import AsideMostPopular from "../components/AsideMostPopular.vue";
+import AsideMostPopular from "../components/AsideHeroSection.vue";
 
 export default {
   components: {
@@ -24,7 +24,6 @@ export default {
   },
 
   beforeRouteEnter(to, from, next) {
-    console.log("view level beforerouteenter");
     const url =
       "https://5u3ndobng8.execute-api.us-east-1.amazonaws.com/staging/home";
 

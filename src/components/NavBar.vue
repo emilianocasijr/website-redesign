@@ -11,6 +11,18 @@
         </ul>
       </nav>
     </div>
+    <div class="search-container">
+      <form role="search" id="form">
+        <input
+          type="search"
+          id="query"
+          name="q"
+          placeholder="Search..."
+          aria-label="Search through site content"
+        />
+        <button>O-</button>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -22,6 +34,7 @@ export default {};
 .navbar-container {
   position: sticky;
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 4.375rem;
   top: 0;
@@ -60,6 +73,17 @@ export default {};
           font-size: 14px;
         }
       }
+    }
+  }
+
+  .search-container {
+    margin: auto 15% auto 0;
+
+    input {
+      background-color: #dbdbdb;
+      border: none;
+      padding: 10px;
+      margin-right: 5px;
     }
   }
 }
